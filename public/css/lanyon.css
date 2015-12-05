@@ -501,11 +501,12 @@ a.pagination-item:hover {
   color: #75b5aa;
 }
 
-.theme-base-0c .sidebar-toggle:before {
-  background-image: -webkit-linear-gradient(to bottom, #75b5aa, #75b5aa 20%, #fff 20%, #fff 40%, #75b5aa 40%, #75b5aa 60%, #fff 60%, #fff 80%, #75b5aa 80%, #75b5aa 100%);
-  background-image: -moz-linear-gradient(to bottom, #75b5aa, #75b5aa 20%, #fff 20%, #fff 40%, #75b5aa 40%, #75b5aa 60%, #fff 60%, #fff 80%, #75b5aa 80%, #75b5aa 100%);
-  background-image: -ms-linear-gradient(to bottom, #75b5aa, #75b5aa 20%, #fff 20%, #fff 40%, #75b5aa 40%, #75b5aa 60%, #fff 60%, #fff 80%, #75b5aa 80%, #75b5aa 100%);
-  background-image:     linear-gradient(to bottom, #75b5aa, #75b5aa 20%, #fff 20%, #fff 40%, #75b5aa 40%, #75b5aa 60%, #fff 60%, #fff 80%, #75b5aa 80%, #75b5aa 100%);
+.theme-base-0c .sidebar-toggle:active:before,
+.theme-base-0c #sidebar-checkbox:checked ~ .sidebar-toggle:before {
+  background-image: -webkit-linear-gradient(to bottom, #fff, #fff 20%, #75B5AA 20%, #75B5AA 40%, #fff 40%, #fff 60%, #75B5AA 60%, #75B5AA 80%, #fff 80%, #fff 100%);
+  background-image:    -moz-linear-gradient(to bottom, #fff, #fff 20%, #75B5AA 20%, #75B5AA 40%, #fff 40%, #fff 60%, #75B5AA 60%, #75B5AA 80%, #fff 80%, #fff 100%);
+  background-image:     -ms-linear-gradient(to bottom, #fff, #fff 20%, #75B5AA 20%, #75B5AA 40%, #fff 40%, #fff 60%, #75B5AA 60%, #75B5AA 80%, #fff 80%, #fff 100%);
+  background-image:         linear-gradient(to bottom, #fff, #fff 20%, #75B5AA 20%, #75B5AA 40%, #fff 40%, #fff 60%, #75B5AA 60%, #75B5AA 80%, #fff 80%, #fff 100%);
 }
 
 /* Blue */
