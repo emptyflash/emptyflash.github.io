@@ -10,7 +10,7 @@ title:               Software Warlock
 tagline:             'Another blog about software, programming, and sorcery'
 description:         'There are a lot of dev blogs out there. This is just another one.'
 url:                 http://softwarewarlock.github.io/
-baseurl:             '/blog'
+baseurl:             '/'
 paginate:            5
 
 # About/contact
