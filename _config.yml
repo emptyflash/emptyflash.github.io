@@ -5,18 +5,18 @@ permalink:           pretty
 relative_permalinks: true
 
 # Setup
-title:               Lanyon
-tagline:             'A Jekyll theme'
-description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:                 http://lanyon.getpoole.com
-baseurl:             ''
+title:               Software Warlock
+tagline:             'Another blog about software, programming, and the sorcery involved with the two'
+description:         'There are a lot of dev blogs out there. This is just another one.'
+url:                 http://softwarewarlock.github.io/
+baseurl:             'http://softwarewarlock.github.io/'
 paginate:            5
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Cameron Alexander
+  url:               https://twitter.com/SoftwareWarlock
+  email:             emptyflash@gmail.com
 
 # Custom vars
 version:             1.0.0
