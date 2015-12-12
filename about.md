@@ -4,27 +4,13 @@ title: About
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
+  Hey there! Welcome to Software Warlock, a blog about software development, programming, and wizardry.
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+My name is Cameron Alexander (sometimes Camorn Axelander, EmptyFlash, or SoftwareWarlock). I’m a software developer for a start-up in Houston, Texas.
 
-There are currently two themes built on Poole:
+I've been programming for about 7 years now (professionally for around 2). I stared in ActionScript making Flash games for fun. Java was my first love, but currently Python and Scala are tied for the title of My Favorite Programming Language&trade;.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
+I needed a place to express some of my thoughts, ideas, analyses, as well as a space to share solutions to problems I think the world needs to know.
 
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+If you'd like to contact me about anything (questions, concerns, hopes, dreams), [twitter](https://twitter.com/SoftwareWarlock) would be the best place. Otherwise, [email](mailto:emptyflash@gmail.com) is sufficient (though my response time may be subpar).
