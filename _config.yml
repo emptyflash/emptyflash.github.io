@@ -7,7 +7,7 @@ paginate_path:       "page:num"
 
 # Setup
 title:               Cameron's blog
-tagline:             'A blog about software, programming, and sorcery'
+tagline:             ' about software, programming, and sorcery'
 description:         'There are a lot of dev blogs out there. This is just another one.'
 url:                 http://emptyflash.github.io/
 baseurl:             ''
