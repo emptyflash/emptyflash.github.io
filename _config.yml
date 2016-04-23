@@ -3,13 +3,13 @@
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
 gems:                [jekyll-paginate]
-paginate_path: "page:num"
+paginate_path:       "page:num"
 
 # Setup
-title:               Software Warlock
+title:               Cameron's blog
 tagline:             'A blog about software, programming, and sorcery'
 description:         'There are a lot of dev blogs out there. This is just another one.'
-url:                 http://softwarewarlock.github.io/
+url:                 http://emptyflash.github.io/
 baseurl:             ''
 paginate:            5
 
