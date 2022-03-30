@@ -24,6 +24,40 @@
         h1, h2, h3 {
             line-height: 1.2
         }
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 0 4px;
+        }
+
+        /* Create three equal columns that sits next to each other */
+        .col {
+          flex: 32%;
+          max-width: 32%;
+          padding: 0 4px;
+        }
+
+        .col img {
+          margin-top: 8px;
+          vertical-align: middle;
+          width: 100%;
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 800px) {
+          .col {
+            flex: 46%;
+            max-width: 46%;
+          }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .col {
+            flex: 100%;
+            max-width: 100%;
+          }
+        }
       </style>
    </head>
    <body>
@@ -46,55 +80,35 @@
            <p>
            The following are pieces created during livecoding practice and performance sessions. Many of them are audio reactive and are best viewed with some dancable music.
            </p>
-           <ul>
-               <li><a href="https://emptyflash-livecode.netlify.app//20220330-livecode">2022-03-30</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20220325-livecode">2022-03-25</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20220324-livecode">2022-03-24</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20220319_2-livecode">2022-03-19 2</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20220319-livecode">2022-03-19</a></li>
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20220318_2-livecode">2022-03-18 2</a></li>-->
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20220318-livecode">2022-03-18</a></li>-->
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20220314-livecode">2022-03-14</a></li>-->
-               <li><a href="https://emptyflash-livecode.netlify.app//20220304-livecode">2022-03-04</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20210625-livecode">2021-06-25</a></li>
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20210624-livecode">2021-06-24</a></li>-->
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20210622-livecode">2021-06-22</a></li>-->
-               <li><a href="https://emptyflash-livecode.netlify.app//20210618-livecode">2021-06-18</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20210617_2-livecode">2021-06-17 2</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20210617-livecode">2021-06-17</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20210614-livecode">2021-06-14</a></li>
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20201211-livecode">2020-12-11</a></li>-->
-
-               <!--
-               <li><a href="https://emptyflash-livecode.netlify.app//20190313-livecode">2019-03-13</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20190312-livecode">2019-03-12</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20190227-livecode">2019-02-27</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20190221-livecode">2019-02-21</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20190219-livecode">2019-02-19</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20190218-livecode">2019-02-18</a></li>
-               -->
-
-               <li><a href="https://emptyflash-livecode.netlify.app//20190208-livecode">2019-02-08</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20190108-livecode">2019-01-08</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20190103-livecode">2019-01-03</a></li>
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20181228-livecode">2018-12-28</a></li>-->
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20181227-livecode">2018-12-27</a></li>-->
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20181225-livecode">2018-12-25</a></li>-->
-               <li><a href="https://emptyflash-livecode.netlify.app//20181223-livecode">2018-12-23</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20181217-livecode">2018-12-17</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20181216-livecode">2018-12-16</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20181214-livecode">2018-12-14</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20181212-livecode">2018-12-12</a></li>
-               <li><a href="https://emptyflash-livecode.netlify.app//20181210-livecode">2018-12-10</a></li>
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20181114-livecode">2018-11-14</a></li>-->
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20181112-livecode">2018-11-12</a></li>-->
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20181111_2-livecode">2018-11-11 2</a></li>-->
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20181111-livecode">2018-11-11</a></li>-->
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20181106-livecode">2018-11-06</a></li>-->
-               <li><a href="https://emptyflash-livecode.netlify.app//20180913-livecode">2018-09-13</a></li>
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20180912-livecode">2018-09-12</a></li>-->
-               <!--<li><a href="https://emptyflash-livecode.netlify.app//20180909-livecode">2018-09-09</a></li>-->
-           </ul>
+           <div class="row">
+               <div class="col">
+                   <a href="https://emptyflash-livecode.netlify.app/20220330-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20220330-livecode" alt="2022-03-30"></img></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20220319_2-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20220319_2-livecode" alt="2022-03-19 2"></img></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20210625-livecode" target="_new"><img src="https://image.thum.io/get/wait/6/https://emptyflash-livecode.netlify.app/20210625-livecode" alt="2021-06-25"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20210617-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20210617-livecode" alt="2021-06-17"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20190108-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20190108-livecode" alt="2019-01-08"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20181217-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20181217-livecode" alt="2018-12-17"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20181212-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20181212-livecode" alt="2018-12-12"/></a>
+               </div>
+               <div class="col">
+                   <a href="https://emptyflash-livecode.netlify.app/20220325-livecode" target="_new"><img src="https://image.thum.io/get/wait/4/https://emptyflash-livecode.netlify.app/20220325-livecode" alt="2022-03-25"</img></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20220319-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20220319-livecode" alt="2022-03-19"></img></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20210618-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20210618-livecode" alt="2021-06-18"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20210614-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20210614-livecode" alt="2021-06-14"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20190103-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20190103-livecode" alt="2019-01-03"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20181216-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20181216-livecode" alt="2018-12-16"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20181210-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20181210-livecode" alt="2018-12-10"/></a>
+               </div>
+               <div class="col">
+                   <a href="https://emptyflash-livecode.netlify.app/20220324-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20220324-livecode" alt="2022-03-24"></img></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20220304-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20220304-livecode" alt="2022-03-04"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20210617_2-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20210617_2-livecode" alt="2021-06-17 2"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20190208-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20190208-livecode" alt="2019-02-08"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20181223-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20181223-livecode" alt="2018-12-23"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20181214-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20181214-livecode" alt="2018-12-14"/></a>
+                   <a href="https://emptyflash-livecode.netlify.app/20180913-livecode" target="_new"><img src="https://image.thum.io/get/wait/2/https://emptyflash-livecode.netlify.app/20180913-livecode" alt="2018-09-13"/></a>
+               </div>
+           </div>
        </div>
        <h2>Photography</h2>
        <ul>
