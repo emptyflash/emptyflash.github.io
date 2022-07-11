@@ -24,20 +24,13 @@
         h1, h2, h3 {
             line-height: 1.2
         }
-        .row {
-          display: flex;
-          flex-wrap: wrap;
-          padding: 0 4px;
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
         }
 
-        /* Create three equal columns that sits next to each other */
-        .col {
-          flex: 32%;
-          max-width: 32%;
-          padding: 0 4px;
-        }
-
-        .col img {
+        .grid img {
           margin-top: 8px;
           vertical-align: middle;
           width: 100%;
@@ -45,18 +38,16 @@
 
         /* Responsive layout - makes a two column-layout instead of four columns */
         @media screen and (max-width: 800px) {
-          .col {
-            flex: 46%;
-            max-width: 46%;
-          }
+            .grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 600px) {
-          .col {
-            flex: 100%;
-            max-width: 100%;
-          }
+            .grid {
+                grid-template-columns: 1fr;
+            }
         }
       </style>
    </head>
@@ -64,7 +55,7 @@
        <h1 id="bio">Bio</h1>
        <div>
            <p>
-           Cameron Alexander is an artist, programmer, and scientist based in New York. His work explores the relationship between math and nature, altered states of consciousness, and the essence of reality through generative art, live coded performances, and photography.
+           Cameron Alexander is an artist, programmer, and scientist based in New York. His work explores the relationship between math and nature (especially in fractals, feedback, and chaotic systems), altered and exotic states of consciousness, and the essence of reality through generative art, live coded performances, and photography.
            </p>
 
            <p>
@@ -81,40 +72,38 @@
            <p>
            The following are pieces created during livecoding practice and performance sessions. Many of them are audio reactive and are best viewed with some dancable music.
            </p>
-           <div class="row">
-               <div class="col">
-                   <a href="https://emptyflash-livecode.netlify.app/20220407-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220407-livecode" alt="2022-04-02"></img></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20220402-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220402-livecode" alt="2022-04-02"></img></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20220319_2-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20220319_2-livecode" alt="2022-03-19 2"></img></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20210625-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/6/https://emptyflash-livecode.netlify.app/20210625-livecode" alt="2021-06-25"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20210617-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20210617-livecode" alt="2021-06-17"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20190108-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20190108-livecode" alt="2019-01-08"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20181217-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20181217-livecode" alt="2018-12-17"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20181212-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20181212-livecode" alt="2018-12-12"/></a>
-               </div>
-               <div class="col">
-                   <a href="https://emptyflash-livecode.netlify.app/20220405-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220405-livecode" alt="2022-04-02"></img></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20220401-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220401-livecode" alt="2022-04-01"></img></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20220330-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20220330-livecode" alt="2022-03-30"></img></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20220319-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20220319-livecode" alt="2022-03-19"></img></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20210618-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20210618-livecode" alt="2021-06-18"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20210614-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20210614-livecode" alt="2021-06-14"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20190103-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20190103-livecode" alt="2019-01-03"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20181216-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20181216-livecode" alt="2018-12-16"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20181210-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20181210-livecode" alt="2018-12-10"/></a>
-               </div>
-               <div class="col">
-                   <a href="https://emptyflash-livecode.netlify.app/20220404-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220404-livecode" alt="2022-04-02"></img></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20220331-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/10/https://emptyflash-livecode.netlify.app/20220331-livecode" alt="2022-03-25"</img></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20220325-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/4/https://emptyflash-livecode.netlify.app/20220325-livecode" alt="2022-03-25"</img></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20220324-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20220324-livecode" alt="2022-03-24"></img></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20220304-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20220304-livecode" alt="2022-03-04"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20210617_2-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20210617_2-livecode" alt="2021-06-17 2"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20190208-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20190208-livecode" alt="2019-02-08"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20181223-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/10/https://emptyflash-livecode.netlify.app/20181223-livecode" alt="2018-12-23"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20181214-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20181214-livecode" alt="2018-12-14"/></a>
-                   <a href="https://emptyflash-livecode.netlify.app/20180913-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20180913-livecode" alt="2018-09-13"/></a>
-               </div>
+           <div class="grid">
+               <a href="https://emptyflash-livecode.netlify.app/20220525-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220525-livecode" alt="2022-05-25"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220510-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220510-livecode" alt="2022-05-10"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220508-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220508-livecode" alt="2022-05-08"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220428-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220428-livecode" alt="2022-04-28"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220407-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220407-livecode" alt="2022-04-07"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220405-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220405-livecode" alt="2022-04-02"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220404-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220404-livecode" alt="2022-04-02"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220402-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220402-livecode" alt="2022-04-02"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220401-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/16/https://emptyflash-livecode.netlify.app/20220401-livecode" alt="2022-04-01"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220331-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/10/https://emptyflash-livecode.netlify.app/20220331-livecode" alt="2022-03-25"</img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220330-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20220330-livecode" alt="2022-03-30"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220325-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/4/https://emptyflash-livecode.netlify.app/20220325-livecode" alt="2022-03-25"</img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220324-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20220324-livecode" alt="2022-03-24"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220319_2-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20220319_2-livecode" alt="2022-03-19 2"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220319-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20220319-livecode" alt="2022-03-19"></img></a>
+               <a href="https://emptyflash-livecode.netlify.app/20220304-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20220304-livecode" alt="2022-03-04"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20210625-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/6/https://emptyflash-livecode.netlify.app/20210625-livecode" alt="2021-06-25"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20210618-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20210618-livecode" alt="2021-06-18"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20210617_2-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20210617_2-livecode" alt="2021-06-17 2"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20210617-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20210617-livecode" alt="2021-06-17"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20210614-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20210614-livecode" alt="2021-06-14"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20190208-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20190208-livecode" alt="2019-02-08"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20190108-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20190108-livecode" alt="2019-01-08"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20190103-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20190103-livecode" alt="2019-01-03"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20181223-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/10/https://emptyflash-livecode.netlify.app/20181223-livecode" alt="2018-12-23"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20181217-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20181217-livecode" alt="2018-12-17"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20181216-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20181216-livecode" alt="2018-12-16"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20181214-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20181214-livecode" alt="2018-12-14"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20181210-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20181210-livecode" alt="2018-12-10"/></a>
+               <a href="https://emptyflash-livecode.netlify.app/20180913-livecode" target="_new"><img src="https://image.thum.io/get/auth/55792/wait/2/https://emptyflash-livecode.netlify.app/20180913-livecode" alt="2018-09-13"/></a>
+           </div>
            </div>
        </div>
        <h2 id="photography">Photography</h2>
@@ -179,6 +168,8 @@
        <h1 id="exhibitions">Exhibitions and Performances</h1>
        <div>
            <ul>
+               <li><a href="http://warperparty.com/uncategorized/warper-party-rubulad-07-07-2022/">Rubulad</a>, Warper Party, 2022</li>
+               <li><a href="https://livecode.nyc/event/20220430-ChaosRave.html">Hex House</a>, Chaotic Interface Design Lab's Chaos2 Algorave, 2022</li>
                <li><a href="https://livecode.nyc/event/20220325-ProcessPower-Algorave.html">Wonderville</a>, Process is Power Algorave, 2022</li>
                <li><a href="https://livecode.nyc/event/20190313-sunnyvale.html">Sunnyvale</a>, March Algorave, 2019</li>
                <li><a href="https://livecode.nyc/event/20180926-sunnyvale.html">Sunnyvale</a>, September Algorave, 2018</li>
