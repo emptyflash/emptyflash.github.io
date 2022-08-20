@@ -60,12 +60,12 @@
     }
     function createSessionThumbnailLink(session) {
         const anchor = document.createElement("a");
-        let link = `https://emptyflash-livecode.netlify.app/${session}`
+        let link = `https://emptyflash-livecode.netlify.app/${session}?cachebust=1`
         if (session.startsWith("hydra")) {
             link = createHydraLink(link);
         }
         anchor.href = link;
-        anchor.target = "_new";
+        anchor.target = "_blank";
         const image = document.createElement("img");
         image.src = `https://image.thum.io/get/auth/55792/wait/16/${link}`
         image.alt = session
