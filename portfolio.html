@@ -60,7 +60,7 @@
     }
     function createSessionThumbnailLink(session) {
         const anchor = document.createElement("a");
-        let link = `https://emptyflash-livecode.netlify.app/${session}?cachebust=1`
+        let link = `https://emptyflash-livecode.netlify.app/${session}?cachebust=2`
         if (session.startsWith("hydra")) {
             link = createHydraLink(link);
         }
