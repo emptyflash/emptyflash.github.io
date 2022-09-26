@@ -55,7 +55,7 @@
     function createHydraLink(link) {
         const loadScript = `await loadScript("${link}");`
         const base64 = btoa(loadScript);
-        const hydraLink = `https://hydra.ojack.xyz/?code=${base64}&cachebust=2`
+        const hydraLink = `https://hydra.ojack.xyz/?code=${base64}&cachebust=3`
         return hydraLink;
     }
     function createSessionThumbnailLink(session) {
